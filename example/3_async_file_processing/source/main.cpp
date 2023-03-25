@@ -26,7 +26,7 @@
 #include <iostream>
 #include <vector>
 
-#include "concurrencpp.h"
+#include "concurrencpp/concurrencpp.h"
 
 concurrencpp::result<void> replace_chars_in_file(std::shared_ptr<concurrencpp::thread_pool_executor> background_executor,
                                                  std::shared_ptr<concurrencpp::thread_pool_executor> threadpool_executor,
