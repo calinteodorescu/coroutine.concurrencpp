@@ -49,3 +49,5 @@ out/
 # CLion
 .idea/
 **/cmake-build-*/
+/VS/CMakeFiles
+/VS/CMakeCache.txt

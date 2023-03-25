@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A355608B-EA5C-38E7-A32E-AFE9F03080D2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>concurrencpp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\coroutine.concurrencpp\VS\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">concurrencpp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">concurrencpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\coroutine.concurrencpp\VS\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">concurrencpp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">concurrencpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\coroutine.concurrencpp\VS\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">concurrencpp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">concurrencpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\coroutine.concurrencpp\VS\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">concurrencpp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">concurrencpp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Git/coroutine.concurrencpp/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Git/coroutine.concurrencpp/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Git/coroutine.concurrencpp/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Git/coroutine.concurrencpp/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\coroutine.concurrencpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\coroutine.concurrencpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Git/coroutine.concurrencpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/coroutine.concurrencpp -BD:/Git/coroutine.concurrencpp/VS --check-stamp-file D:/Git/coroutine.concurrencpp/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Tools\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\Git\coroutine.concurrencpp\cmake\coroutineOptions.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\coroutine.concurrencpp\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Git/coroutine.concurrencpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/coroutine.concurrencpp -BD:/Git/coroutine.concurrencpp/VS --check-stamp-file D:/Git/coroutine.concurrencpp/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Tools\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\Git\coroutine.concurrencpp\cmake\coroutineOptions.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\coroutine.concurrencpp\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Git/coroutine.concurrencpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/coroutine.concurrencpp -BD:/Git/coroutine.concurrencpp/VS --check-stamp-file D:/Git/coroutine.concurrencpp/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Tools\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\Git\coroutine.concurrencpp\cmake\coroutineOptions.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\coroutine.concurrencpp\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Git/coroutine.concurrencpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/coroutine.concurrencpp -BD:/Git/coroutine.concurrencpp/VS --check-stamp-file D:/Git/coroutine.concurrencpp/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Tools\CMake\share\cmake-3.25\Modules\BasicConfigVersion-SameMinorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\FindThreads.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.25\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;D:\Git\coroutine.concurrencpp\VS\CMakeFiles\3.25.1\CMakeSystem.cmake;D:\Git\coroutine.concurrencpp\cmake\coroutineOptions.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\coroutine.concurrencpp\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\concurrencpp.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\errors.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\task.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\forward_declarations.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\platform_defs.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\coroutines\coroutine.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\constants.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\derivable_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\executor_all.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\inline_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\manual_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\thread_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\thread_pool_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\executors\worker_thread_executor.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\consumer_context.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\producer_context.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\result_state.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\shared_result_state.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\lazy_result_state.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\impl\generator_state.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\constants.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\make_result.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\promises.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\result.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\lazy_result.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\lazy_result_awaitable.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\shared_result.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\result_awaitable.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\shared_result_awaitable.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\result_fwd_declarations.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\when_result.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\resume_on.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\results\generator.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\runtime\constants.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\runtime\runtime.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\threads\async_lock.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\threads\async_condition_variable.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\threads\thread.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\threads\cache_line.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\timers\constants.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\timers\timer.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\timers\timer_queue.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\utils\bind.h" />
+    <ClInclude Include="D:\Git\coroutine.concurrencpp\include\concurrencpp\utils\slist.h" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\task.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\executors\executor.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\executors\manual_executor.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\executors\thread_executor.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\executors\thread_pool_executor.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\executors\worker_thread_executor.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\results\impl\consumer_context.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\results\impl\result_state.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\results\impl\shared_result_state.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\results\promises.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\runtime\runtime.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\threads\async_lock.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\threads\async_condition_variable.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\threads\thread.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\timers\timer.cpp" />
+    <ClCompile Include="D:\Git\coroutine.concurrencpp\source\timers\timer_queue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Git\coroutine.concurrencpp\VS\ZERO_CHECK.vcxproj">
+      <Project>{0C3842E7-0F48-3B0A-A01E-7196EB30CB55}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
