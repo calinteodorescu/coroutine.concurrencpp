@@ -39,7 +39,9 @@ namespace concurrencpp::details {
     class thread_pool_worker;
 }  // namespace concurrencpp::details
 
-namespace concurrencpp {
+namespace concurrencpp 
+{
+    using TShared_ptr_thread_pool_executor = std::shared_ptr<concurrencpp::thread_pool_executor>;
     class CRCPP_API alignas(CRCPP_CACHE_LINE_ALIGNMENT) thread_pool_executor final : public derivable_executor<thread_pool_executor> {
 
         friend class details::thread_pool_worker;
@@ -72,5 +74,6 @@ namespace concurrencpp {
         std::chrono::milliseconds max_worker_idle_time() const noexcept;
     };
 }  // namespace concurrencpp
+using namespace concurrencpp;
 
 #endif
