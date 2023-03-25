@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "concurrencpp/concurrencpp.h"
+#include "concurrencpp.h"
 
 using namespace std::chrono_literals;
 

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <filesystem>
 
-#include "concurrencpp/concurrencpp.h"
+#include "concurrencpp.h"
 
 concurrencpp::generator<std::string_view> read_lines(std::string_view text) {
     std::string_view::size_type pos = 0;

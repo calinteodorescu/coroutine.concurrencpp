@@ -188,14 +188,19 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Git\coroutine.concurrencpp\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Header Files">
       <UniqueIdentifier>{F4F92B94-3A9B-3A41-AEDD-3264355D9818}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F2949181-38CA-337B-8F79-A9ECD968D6AA}</UniqueIdentifier>
     </Filter>
+    <Filter Include="%2a%2a Resource Files">
+      <UniqueIdentifier>{993a275f-ec56-4e78-a07f-603e1fcb17b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\coroutine.concurrencpp\CMakeLists.txt">
+      <Filter>%2a%2a Resource Files</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>
