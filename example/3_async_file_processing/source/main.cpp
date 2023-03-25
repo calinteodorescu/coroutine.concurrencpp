@@ -28,16 +28,16 @@
 
 #include "concurrencpp/concurrencpp.h"
 
-concurrencpp::result<void> replace_chars_in_file( TShared_ptr_thread_pool_executor background_executor,
-                                                  TShared_ptr_thread_pool_executor threadpool_executor,
-                                                  const std::string                file_path,
-                                                  char                             from,
-                                                  char                             to
-                                                )
+concurrencpp::result< void > replace_chars_in_file( TShared_ptr_thread_pool_executor background_executor,
+                                                    TShared_ptr_thread_pool_executor threadpool_executor,
+                                                    const std::string                file_path,
+                                                    char                             from,
+                                                    char                             to
+                                                  )
 {
 
     // tell the background executor to read a whole file to a buffer and return it
-    auto file_content = co_await background_executor->submit
+    auto&& file_content = co_await background_executor->submit
                         ( [ file_path ] 
                         {
                             std::ifstream input;
@@ -46,7 +46,7 @@ concurrencpp::result<void> replace_chars_in_file( TShared_ptr_thread_pool_execut
 
                             std::vector< char > buffer( std::istreambuf_iterator< char >( input ), { } );
 
-                            return buffer;
+                            return std::move( buffer );
                         }
                         );
 
