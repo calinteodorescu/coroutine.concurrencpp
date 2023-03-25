@@ -15,11 +15,12 @@
 
 #endif
 
-namespace concurrencpp::details {
-    template<class promise_type>
-    using coroutine_handle = CRCPP_COROUTINE_NAMESPACE::coroutine_handle<promise_type>;
-    using suspend_never = CRCPP_COROUTINE_NAMESPACE::suspend_never;
-    using suspend_always = CRCPP_COROUTINE_NAMESPACE::suspend_always;
+namespace concurrencpp::details 
+{
+    template< typename promise_type >
+    using coroutine_handle = CRCPP_COROUTINE_NAMESPACE::coroutine_handle< promise_type >;
+    using suspend_never    = CRCPP_COROUTINE_NAMESPACE::suspend_never;
+    using suspend_always   = CRCPP_COROUTINE_NAMESPACE::suspend_always;
 }  // namespace concurrencpp::details
 
 #endif
