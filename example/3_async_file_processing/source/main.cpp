@@ -38,17 +38,17 @@ concurrencpp::result< void > replace_chars_in_file( TShared_ptr_thread_pool_exec
 
     // tell the background executor to read a whole file to a buffer and return it
     auto&& file_content = co_await background_executor->submit
-                        ( [ file_path ] 
-                        {
-                            std::ifstream input;
-                            input.exceptions( std::ifstream::badbit );
-                            input.open      ( file_path, std::ios::binary );
-
-                            std::vector< char > buffer( std::istreambuf_iterator< char >( input ), { } );
-
-                            return std::move( buffer );
-                        }
-                        );
+                          ( [ file_path ] 
+                          {
+                              std::ifstream input;
+                              input.exceptions( std::ifstream::badbit );
+                              input.open      ( file_path, std::ios::binary );
+                          
+                              std::vector< char > buffer( std::istreambuf_iterator< char >( input ), { } );
+                          
+                              return std::move( buffer );
+                          }
+                          );
 
     // tell the threadpool executor to process the file
     auto processed_file_content = co_await threadpool_executor->submit
