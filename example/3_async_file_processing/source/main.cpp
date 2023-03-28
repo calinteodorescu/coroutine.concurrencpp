@@ -62,7 +62,7 @@ concurrencpp::result< void > replace_chars_in_file( TShared_ptr_thread_pool_exec
                                           }
                                       }
             
-                                     return std::move( file_content );
+                                      return std::move( file_content );
                                     }
                                     );
 
