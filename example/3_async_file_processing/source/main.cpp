@@ -51,20 +51,20 @@ concurrencpp::result< void > replace_chars_in_file( TShared_ptr_thread_pool_exec
                           );
 
     // tell the threadpool executor to process the file
-    auto processed_file_content = co_await threadpool_executor->submit
-                                  ( [ file_content = std::move( file_content ), from, to ]( ) mutable
-                                  {
-                                    for( auto& c : file_content )
+    auto&& processed_file_content = co_await threadpool_executor->submit
+                                    ( [ file_content = std::move( file_content ), from, to ]( ) mutable
                                     {
-                                        if ( c == from ) 
-                                        {
-                                            c = to;
-                                        }
+                                      for( auto& c : file_content )
+                                      {
+                                          if ( c == from ) 
+                                          {
+                                              c = to;
+                                          }
+                                      }
+            
+                                     return std::move( file_content );
                                     }
-
-                                   return std::move( file_content );
-                                  }
-                                  );
+                                    );
 
     // schedule the write operation on the background executor and await it to finish.
     co_await background_executor->submit( [ file_path, file_content = std::move( processed_file_content ) ]
