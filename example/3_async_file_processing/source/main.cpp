@@ -67,14 +67,15 @@ concurrencpp::result< void > replace_chars_in_file( TShared_ptr_thread_pool_exec
                                     );
 
     // schedule the write operation on the background executor and await it to finish.
-    co_await background_executor->submit( [ file_path, file_content = std::move( processed_file_content ) ]
-                                        {
-                                            std::ofstream output;
-                                            output.exceptions( std::ofstream::badbit );
-                                            output.open      ( file_path, std::ios::binary );
-                                            output.write     ( file_content.data( ), file_content.size( ) );
-                                        }
-                                        );
+    co_await background_executor->submit
+    ( [ file_path, file_content = std::move( processed_file_content ) ]
+    {
+        std::ofstream output;
+        output.exceptions( std::ofstream::badbit );
+        output.open      ( file_path, std::ios::binary );
+        output.write     ( file_content.data( ), file_content.size( ) );
+    }
+    );
 
     std::cout << "file has been modified successfully" << std::endl;
 }
